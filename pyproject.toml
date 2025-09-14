@@ -1,0 +1,33 @@
+[project]
+name = "velocyto"
+version = "0.17.17"
+requires-python = "~= 3.9"
+keywords=["RNAseq", "singlecell", "bioinformatics", "transcriptomics"]
+description="RNA velocity analysis for single cell RNA-seq data"
+authors=[
+    {name="Linnarsson Lab", email="sten.linnarsson@ki.se"}
+]
+
+
+dependencies = [
+    'numpy',
+    'scipy',
+    'cython',
+    'numba',
+    'matplotlib',
+    'scikit-learn',
+    'h5py',
+    'loompy',
+    'pysam',
+    'Click',
+    'pandas'
+]
+[build-system]
+requires = ["setuptools <=66","numpy", "cython"]
+
+[project.scripts]
+velocyto = "velocyto.commands.velocyto:cli"
+
+# license="BSD-2-Clause"
+[project.license]
+file = "LICENSE"

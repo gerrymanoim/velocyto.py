@@ -61,3 +61,6 @@ velocyto/commands/__pycache__
 
 built/*
 built
+
+# so file
+velocyto/speedboosted.cpython-39-darwin.so
